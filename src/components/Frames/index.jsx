@@ -6,15 +6,11 @@ import { Quaternion, Vector3 } from "three";
 import { useLocation, useRoute } from "wouter";
 import Frame from "../Frame";
 
-const Frames = ({
-  images,
-  q = new Quaternion(),
-  p = new Vector3(),
-}) => {
+const Frames = ({ images, q = new Quaternion(), p = new Vector3() }) => {
   const GOLDENRATIO = 1.61803398875;
   const ref = useRef();
   const clicked = useRef();
-  const [, params] = useRoute("/item/:id");
+  const [, params] = useRoute("/type/:id");
   const [, setLocation] = useLocation();
 
   useEffect(() => {
@@ -30,10 +26,12 @@ const Frames = ({
       q.identity();
     }
   });
+
   useFrame((state, dt) => {
     easing.damp3(state.camera.position, p, 0.4, dt);
     easing.dampQ(state.camera.quaternion, q, 0.4, dt);
   });
+
   return (
     <>
       <group
@@ -41,14 +39,14 @@ const Frames = ({
         onClick={(e) => (
           e.stopPropagation(),
           setLocation(
-            clicked.current === e.object ? "/" : "/item/" + e.object.name
+            clicked.current === e.object ? "/" : "/type/" + e.object.name
           )
         )}
         onPointerMissed={() => setLocation("/")}
       >
-        {images.map(
-          (props) => <Frame key={props.url} {...props} /> /* prettier-ignore */
-        )}
+        {images.map((props) => (
+          <Frame key={props.url} {...props} />
+        ))}
       </group>
     </>
   );

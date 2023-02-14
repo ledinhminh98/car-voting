@@ -1,4 +1,4 @@
-import { Float, Text } from '@react-three/drei';
+import { Float, Text } from "@react-three/drei";
 
 const Texts = () => {
   return (

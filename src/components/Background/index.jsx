@@ -1,7 +1,7 @@
-import { Float } from '@react-three/drei';
-import { useLoader } from '@react-three/fiber';
-import { TextureLoader, RepeatWrapping, DoubleSide } from 'three';
-import { isMobile } from 'react-device-detect'
+import { Float } from "@react-three/drei";
+import { useLoader } from "@react-three/fiber";
+import { isMobile } from "react-device-detect";
+import { DoubleSide, RepeatWrapping, TextureLoader } from "three";
 import backgroundImage from "/src/assets/images/the-sky.jpeg";
 
 const Background = () => {
