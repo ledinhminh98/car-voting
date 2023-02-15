@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { App } from './App'
+import App from './App'
 import './index.css'
-import lamborghini from '/src/assets/images/lamborghini.jpg'
 import bugatti from '/src/assets/images/bugatti.jpg'
-import porsche from '/src/assets/images/porsche.jpg'
+import lamborghini from '/src/assets/images/lamborghini.jpg'
 import mercedes from '/src/assets/images/mercedes.jpg'
+import porsche from '/src/assets/images/porsche.jpg'
 
 const images = [
   { position: [-2.15, 0, 1.5], rotation: [0, Math.PI / 2.5, 0], url: lamborghini, item: 'Lamborghini' },
