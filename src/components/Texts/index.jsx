@@ -14,7 +14,7 @@ const Texts = () => {
           outlineWidth={0.2}
           outlineColor={"#fff"}
           color={"#4566e0"}
-          font="/src/assets/fonts/PirataOne-Regular.woff"
+          font="/fonts/PirataOne-Regular.woff"
           maxWidth={3}
           anchorX="center"
           anchorY="top"
@@ -28,7 +28,7 @@ const Texts = () => {
           outlineWidth={0.09}
           outlineColor={"#fff"}
           color={"#4566e0"}
-          font="/src/assets/fonts/PirataOne-Regular.woff"
+          font="/fonts/PirataOne-Regular.woff"
           maxWidth={3}
           anchorX="center"
           anchorY="top"
@@ -40,7 +40,7 @@ const Texts = () => {
       </Float>
       <Text
         textAlign="center"
-        font="/src/assets/fonts/JosefinSans-SemiBold.woff"
+        font="/fonts/JosefinSans-SemiBold.woff"
         maxWidth={1}
         anchorX="center"
         anchorY="top"
