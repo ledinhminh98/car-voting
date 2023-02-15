@@ -20,6 +20,10 @@ This GitHub project is a simple webpage designed to showcase a collection of sup
     ```sh
     npm run dev
     ```
+5. To build the project for production, use the following command:
+    ```sh
+    npm run build
+    ```
 
 ## Contributing
 Contributions are welcome. Please submit a pull request if you have a feature or bug fix you would like to contribute.
